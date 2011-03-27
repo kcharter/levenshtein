@@ -57,3 +57,22 @@ Executable lev2-prof
                   -fwarn-unused-imports
                   -auto-all -caf-all -rtsopts
                   -O2
+
+Executable lev3-prof
+  Build-Depends:  base >= 4 && < 5,
+                  vector >= 0.7 && < 1
+  Main-Is:        lev3-prof.hs
+  GHC-Options:    -fwarn-incomplete-patterns
+                  -fwarn-unused-imports
+                  ---auto-all -caf-all -rtsopts
+                  -O1
+
+Executable lev4-prof
+  Build-Depends:  base >= 4 && < 5,
+                  vector >= 0.7 && < 1
+  Main-Is:        lev4-prof.hs
+  GHC-Options:    -fwarn-incomplete-patterns
+                  -fwarn-unused-imports
+                  -auto-all -caf-all -rtsopts
+                  -O2
+
