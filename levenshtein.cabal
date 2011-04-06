@@ -76,3 +76,14 @@ Executable lev4-prof
                   -auto-all -caf-all -rtsopts
                   -O2
 
+Executable kitten-sitting-bench
+  Build-Depends:  base >= 4 && < 5,
+                  criterion >= 0.5 && < 1,
+                  deepseq >= 1.1.0.2 && < 2,
+                  vector >= 0.7 && < 1,
+                  QuickCheck >= 2.4 && < 3
+  Main-Is:        kitten-sitting-bench.hs
+  GHC-Options:    -fwarn-incomplete-patterns
+                  -fwarn-unused-imports
+                  -- -prof -auto-all -caf-all
+                  -O2
